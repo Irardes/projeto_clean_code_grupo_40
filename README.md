@@ -24,18 +24,6 @@ O objetivo da aplicação é permitir criar, atribuir e acompanhar tarefas em eq
 - ⏰ Destaque automático de tarefas com prazo vencido
 - 📱 Layout adaptável para celular
 
-### Edição de uma tarefa
-
-![Edição de tarefa](img/edicao.png)
-
-### Filtro de tarefas atrasadas
-
-![Filtro por status atrasada](img/filtro-atrasadas.png)
-
-### Versão para celular
-
-<img src="img/celular.png" alt="Versão para celular" width="260">
-
 ## 🗂️ Estrutura do projeto
 
 ```
