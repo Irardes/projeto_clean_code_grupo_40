@@ -4,8 +4,6 @@ Projeto Integrador: Boas Práticas de Desenvolvimento de Software (Segunda Etapa
 
 Aplicação web simples para criar, atribuir e acompanhar tarefas em equipe. Feita com HTML, CSS e JavaScript puro, sem banco de dados externo: os dados ficam salvos no LocalStorage do navegador.
 
-![Tela principal com a lista de tarefas](img/lista-tarefas.png)
-
 ## 🎯 Problema e objetivo
 
 Pequenas equipes, grupos de estudo e times de projetos acadêmicos costumam organizar tarefas de forma informal (mensagens, planilhas soltas ou de memória), o que gera retrabalho, prazos perdidos e falta de clareza sobre quem é responsável por cada atividade.
