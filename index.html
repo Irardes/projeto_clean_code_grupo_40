@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="css/variaveis.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/formulario.css">
+  <link rel="stylesheet" href="css/botoes.css">
+  <link rel="stylesheet" href="css/lista.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Gerenciador de Tarefas</h1>
+    <p>Organize as atividades da sua equipe</p>
+  </header>
+
+  <main class="container">
+    <section class="cartao" aria-labelledby="titulo-form">
+      <h2 id="titulo-form">Nova tarefa</h2>
+      <form id="form-tarefa" novalidate>
+        <input type="hidden" id="tarefa-id">
+
+        <div class="campo">
+          <label for="titulo">Título</label>
+          <input type="text" id="titulo" maxlength="80" placeholder="Ex.: Montar o layout da página">
+          <small class="erro" id="erro-titulo"></small>
+        </div>
+
+        <div class="campo">
+          <label for="responsavel">Responsável</label>
+          <input type="text" id="responsavel" maxlength="40" placeholder="Ex.: Ana">
+          <small class="erro" id="erro-responsavel"></small>
+        </div>
+
+        <div class="linha">
+          <div class="campo">
+            <label for="prazo">Prazo</label>
+            <input type="date" id="prazo">
+          </div>
+          <div class="campo">
+            <label for="status">Status</label>
+            <select id="status">
+              <option value="pendente">Pendente</option>
+              <option value="andamento">Em andamento</option>
+              <option value="concluida">Concluída</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="acoes">
+          <button type="submit" class="btn btn-primario" id="btn-salvar">Adicionar tarefa</button>
+          <button type="button" class="btn btn-neutro" id="btn-cancelar" hidden>Cancelar edição</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="cartao" aria-labelledby="titulo-lista">
+      <div class="cabecalho-lista">
+        <h2 id="titulo-lista">Tarefas</h2>
+        <span class="contador" id="contador">0 tarefas</span>
+      </div>
+
+      <div class="filtros">
+        <input type="search" id="busca" placeholder="Pesquisar por título ou responsável" aria-label="Pesquisar tarefas">
+        <select id="filtro-status" aria-label="Filtrar por status">
+          <option value="todas">Todos os status</option>
+          <option value="pendente">Pendente</option>
+          <option value="andamento">Em andamento</option>
+          <option value="concluida">Concluída</option>
+          <option value="atrasada">Atrasada</option>
+        </select>
+      </div>
+
+      <ul id="lista" class="lista"></ul>
+      <p id="vazio" class="vazio" hidden>Nenhuma tarefa encontrada.</p>
+    </section>
+  </main>
+
+  <script src="js/armazenamento.js"></script>
+  <script src="js/regras.js"></script>
+  <script src="js/validacao.js"></script>
+  <script src="js/interface.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
