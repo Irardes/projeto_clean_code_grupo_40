@@ -1,6 +1,24 @@
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .container {
     grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+
+  .painel-form {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .topo {
+    padding: 28px 16px 24px;
+  }
+
+  .cabecalho-lista,
+  .filtros,
+  .item {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .filtros {
@@ -9,5 +27,31 @@
 
   .filtros select {
     width: 100%;
+  }
+
+  .item {
+    grid-template-columns: 24px 1fr;
+    grid-template-areas:
+      "marca topo"
+      "marca info"
+      "marca acoes";
+    column-gap: 12px;
+  }
+
+  .item-acoes {
+    justify-content: flex-start;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .logo {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+  }
+
+  .marca {
+    gap: 12px;
   }
 }

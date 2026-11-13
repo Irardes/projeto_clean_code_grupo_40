@@ -1,12 +1,33 @@
 :root {
-  --cor-primaria: #028090;
-  --cor-primaria-escura: #01626f;
-  --cor-destaque: #02c39a;
-  --cor-fundo: #f0f7f6;
-  --cor-texto: #1d3a3d;
-  --cor-suave: #5b7b7e;
-  --cor-borda: #d5e6e4;
-  --cor-perigo: #c0392b;
-  --cor-aviso: #b9770e;
-  --raio: 10px;
+  --quadro: #f1f4f2;
+  --superficie: #ffffff;
+  --tinta: #14213d;
+  --tinta-suave: #4a5672;
+  --linha: #dbe1e8;
+  --borda-campo: #7d8aa1;
+
+  --acao: #2447d6;
+  --acao-escura: #1a37ad;
+
+  --pendente-fg: #7a4f00;
+  --pendente-bg: #fff1cf;
+  --pendente-marca: #c98400;
+
+  --andamento-fg: #1d3bb0;
+  --andamento-bg: #e4eaff;
+  --andamento-marca: #2447d6;
+
+  --concluida-fg: #0b6444;
+  --concluida-bg: #dcf4e8;
+  --concluida-marca: #0c7a54;
+
+  --atrasada-fg: #a3281a;
+  --atrasada-bg: #fde4df;
+  --atrasada-marca: #d6402e;
+
+  --raio: 14px;
+  --raio-campo: 10px;
+
+  --fonte-titulo: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --fonte-texto: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
 }

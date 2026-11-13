@@ -1,38 +1,63 @@
 .btn {
-  border: 0;
-  border-radius: 8px;
-  padding: 9px 14px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  cursor: pointer;
+  border: 1.5px solid transparent;
+  border-radius: var(--raio-campo);
+  min-height: 44px;
+  padding: 9px 18px;
+  font-size: 1rem;
+  font-weight: 600;
   font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .btn-primario {
-  background: var(--cor-primaria);
+  background: var(--acao);
   color: #fff;
 }
 
 .btn-primario:hover {
-  background: var(--cor-primaria-escura);
+  background: var(--acao-escura);
 }
 
 .btn-neutro {
-  background: #e4eeed;
-  color: var(--cor-texto);
+  background: var(--superficie);
+  border-color: var(--borda-campo);
+  color: var(--tinta);
 }
 
-.btn-perigo {
-  background: #fbe9e7;
-  color: var(--cor-perigo);
+.btn-neutro:hover {
+  border-color: var(--tinta);
+  background: var(--quadro);
 }
 
 .btn-sucesso {
-  background: #e0f7f1;
-  color: #0a7a5f;
+  background: var(--concluida-bg);
+  color: var(--concluida-fg);
+}
+
+.btn-sucesso:hover {
+  border-color: var(--concluida-marca);
+}
+
+.btn-perigo {
+  background: var(--superficie);
+  border-color: #e2b4ad;
+  color: var(--atrasada-fg);
+}
+
+.btn-perigo:hover {
+  background: var(--atrasada-bg);
+  border-color: var(--atrasada-marca);
 }
 
 .btn-pequeno {
-  padding: 6px 10px;
-  font-size: 0.82rem;
+  min-height: 36px;
+  padding: 5px 12px;
+  font-size: 0.9rem;
+}
+
+@media (pointer: coarse) {
+  .btn-pequeno {
+    min-height: 44px;
+  }
 }

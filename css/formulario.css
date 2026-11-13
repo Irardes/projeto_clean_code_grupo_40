@@ -1,47 +1,72 @@
+.painel-form {
+  padding: 24px;
+  position: sticky;
+  top: 16px;
+}
+
+.painel-form h2 {
+  margin-bottom: 18px;
+}
+
 .campo {
   display: flex;
   flex-direction: column;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
   flex: 1;
+  min-width: 0;
 }
 
 .campo label {
-  font-weight: bold;
-  font-size: 0.9rem;
-  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin-bottom: 6px;
 }
 
 input[type="text"],
 input[type="date"],
 input[type="search"],
 select {
-  padding: 9px 10px;
-  border: 1px solid var(--cor-borda);
-  border-radius: 8px;
-  font-size: 0.95rem;
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 1.5px solid var(--borda-campo);
+  border-radius: var(--raio-campo);
+  font-size: 1rem;
   font-family: inherit;
-  color: var(--cor-texto);
-  background: #fff;
+  color: var(--tinta);
+  background: var(--superficie);
   width: 100%;
+  transition: border-color 0.15s ease;
+}
+
+input::placeholder {
+  color: #66738c;
+}
+
+input:hover,
+select:hover {
+  border-color: var(--tinta);
 }
 
 input.invalido {
-  border-color: var(--cor-perigo);
+  border-color: var(--atrasada-marca);
+  background: #fff8f7;
 }
 
 .erro {
-  color: var(--cor-perigo);
-  min-height: 1em;
-  margin-top: 3px;
+  color: var(--atrasada-fg);
+  font-size: 0.88rem;
+  min-height: 1.3em;
+  margin-top: 4px;
 }
 
 .linha {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .acoes {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   flex-wrap: wrap;
+  margin-top: 4px;
 }

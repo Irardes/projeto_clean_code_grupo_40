@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <title>Gerenciador de Tarefas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="css/variaveis.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/formulario.css">
@@ -13,12 +17,25 @@
 </head>
 <body>
   <header class="topo">
-    <h1>Gerenciador de Tarefas</h1>
-    <p>Organize as atividades da sua equipe</p>
+    <div class="topo-conteudo">
+      <div class="marca">
+        <img class="logo" src="img/logo.png" alt="Logotipo do Gerenciador de Tarefas" width="72" height="72">
+        <div>
+          <h1>Gerenciador de Tarefas</h1>
+          <p>Organize as atividades da sua equipe</p>
+        </div>
+      </div>
+      <ul class="legenda" aria-label="Legenda de status">
+        <li class="legenda-pendente">Pendente</li>
+        <li class="legenda-andamento">Em andamento</li>
+        <li class="legenda-concluida">Concluída</li>
+        <li class="legenda-atrasada">Atrasada</li>
+      </ul>
+    </div>
   </header>
 
   <main class="container">
-    <section class="cartao" aria-labelledby="titulo-form">
+    <section class="cartao painel-form" aria-labelledby="titulo-form">
       <h2 id="titulo-form">Nova tarefa</h2>
       <form id="form-tarefa" novalidate>
         <input type="hidden" id="tarefa-id">
@@ -57,7 +74,7 @@
       </form>
     </section>
 
-    <section class="cartao" aria-labelledby="titulo-lista">
+    <section class="cartao painel-lista" aria-labelledby="titulo-lista">
       <div class="cabecalho-lista">
         <h2 id="titulo-lista">Tarefas</h2>
         <span class="contador" id="contador">0 tarefas</span>
