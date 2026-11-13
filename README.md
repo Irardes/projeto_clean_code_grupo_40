@@ -4,6 +4,8 @@ Projeto Integrador: Boas Práticas de Desenvolvimento de Software (Segunda Etapa
 
 Aplicação web simples para criar, atribuir e acompanhar tarefas em equipe. Feita com HTML, CSS e JavaScript puro, sem banco de dados externo: os dados ficam salvos no LocalStorage do navegador.
 
+![Tela principal com a lista de tarefas](img/lista-tarefas.png)
+
 ## 🎯 Problema e objetivo
 
 Pequenas equipes, grupos de estudo e times de projetos acadêmicos costumam organizar tarefas de forma informal (mensagens, planilhas soltas ou de memória), o que gera retrabalho, prazos perdidos e falta de clareza sobre quem é responsável por cada atividade.
@@ -28,12 +30,31 @@ O objetivo da aplicação é permitir criar, atribuir e acompanhar tarefas em eq
 .
 ├── index.html
 ├── css/
-│   └── style.css
+│   ├── variaveis.css
+│   ├── base.css
+│   ├── formulario.css
+│   ├── botoes.css
+│   ├── lista.css
+│   └── responsivo.css
 ├── js/
-│   └── script.js
+│   ├── armazenamento.js
+│   ├── regras.js
+│   ├── validacao.js
+│   ├── interface.js
+│   └── main.js
 ├── img/
 └── README.md
 ```
+
+- `variaveis.css`: cores e medidas em um só lugar
+- `base.css`: estilo geral da página
+- `formulario.css`, `botoes.css`, `lista.css`: um arquivo por parte da tela
+- `responsivo.css`: ajustes para celular
+- `armazenamento.js`: leitura e gravação no LocalStorage
+- `regras.js`: regras das tarefas (atraso, filtros, datas)
+- `validacao.js`: validação dos campos do formulário
+- `interface.js`: tudo que mexe na tela
+- `main.js`: junta as partes e liga os eventos
 
 ## 💾 Armazenamento dos dados
 
@@ -41,8 +62,8 @@ As tarefas são salvas no LocalStorage, na chave `gerenciador-tarefas:v1`. Os da
 
 ## 🛠️ Boas práticas aplicadas
 
-- 🧩 Código separado por responsabilidade: HTML, CSS e JavaScript em arquivos próprios
-- 🏷️ Nomes claros e funções pequenas, cada uma com uma responsabilidade (`salvarTarefa`, `validarFormulario`, `filtrarTarefas`)
+- 🧩 Código separado por responsabilidade: HTML, CSS e JavaScript em arquivos próprios, divididos por assunto (armazenamento, regras, validação, interface)
+- 🏷️ Nomes claros e funções pequenas, cada uma com uma responsabilidade (`salvarTarefa`, `validar`, `filtrar`)
 - ✔️ Validação dos dados, com mensagem de erro ao lado do campo
 - 🔒 Textos digitados são inseridos como texto puro, sem interpretar HTML
 - 🛡️ Leitura do LocalStorage protegida contra falhas, e chave com versão para mudanças futuras
