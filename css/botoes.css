@@ -1,0 +1,38 @@
+.btn {
+  border: 0;
+  border-radius: 8px;
+  padding: 9px 14px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-primario {
+  background: var(--cor-primaria);
+  color: #fff;
+}
+
+.btn-primario:hover {
+  background: var(--cor-primaria-escura);
+}
+
+.btn-neutro {
+  background: #e4eeed;
+  color: var(--cor-texto);
+}
+
+.btn-perigo {
+  background: #fbe9e7;
+  color: var(--cor-perigo);
+}
+
+.btn-sucesso {
+  background: #e0f7f1;
+  color: #0a7a5f;
+}
+
+.btn-pequeno {
+  padding: 6px 10px;
+  font-size: 0.82rem;
+}
