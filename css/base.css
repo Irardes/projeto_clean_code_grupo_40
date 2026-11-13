@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Calibri, Arial, sans-serif;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.4;
+}
+
+.topo {
+  background: #013a40;
+  color: #fff;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.topo h1 {
+  margin: 0 0 4px;
+  font-size: 1.8rem;
+}
+
+.topo p {
+  margin: 0;
+  color: #bfd9d6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 24px auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.cartao {
+  background: #fff;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 20px;
+}
+
+.cartao h2 {
+  margin: 0 0 14px;
+  font-size: 1.15rem;
+}
+
+input:focus,
+select:focus,
+button:focus-visible {
+  outline: 2px solid var(--cor-destaque);
+  outline-offset: 1px;
+}

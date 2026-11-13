@@ -1,0 +1,47 @@
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  flex: 1;
+}
+
+.campo label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="search"],
+select {
+  padding: 9px 10px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--cor-texto);
+  background: #fff;
+  width: 100%;
+}
+
+input.invalido {
+  border-color: var(--cor-perigo);
+}
+
+.erro {
+  color: var(--cor-perigo);
+  min-height: 1em;
+  margin-top: 3px;
+}
+
+.linha {
+  display: flex;
+  gap: 10px;
+}
+
+.acoes {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}

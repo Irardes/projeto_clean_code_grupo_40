@@ -1,0 +1,12 @@
+:root {
+  --cor-primaria: #028090;
+  --cor-primaria-escura: #01626f;
+  --cor-destaque: #02c39a;
+  --cor-fundo: #f0f7f6;
+  --cor-texto: #1d3a3d;
+  --cor-suave: #5b7b7e;
+  --cor-borda: #d5e6e4;
+  --cor-perigo: #c0392b;
+  --cor-aviso: #b9770e;
+  --raio: 10px;
+}
